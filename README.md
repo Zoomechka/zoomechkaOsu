@@ -1,1 +1,1 @@
-# zoomechkaOsu
+ZOOMECHKASKINHUB

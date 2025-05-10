@@ -1,0 +1,113 @@
+/* Общие стили */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Темный фон вместо серого */
+    color: #fff; /* Белый текст */
+    line-height: 1.6;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Шапка */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный */
+    padding: 30px 0;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Эффект размытия */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Граница */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em; /* Крупнее */
+    letter-spacing: 2px; /* Расстояние между буквами */
+    color: #fff;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Карточки скинов */
+.skins {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    max-width: 1200px; /* Ограничиваем ширину контента */
+    margin: 0 auto; /* Центрируем */
+}
+
+.skin-card {
+    background-color: rgba(0, 0, 0, 0.4); /* Темные карточки */
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(8px); /* Размытие */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Граница */
+}
+
+.skin-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+}
+
+.skin-card img {
+    width: 100%;
+    height: 200px; /* Фиксированная высота изображения */
+    object-fit: cover; /* Обрезаем изображение по размеру */
+}
+
+.skin-card h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #fff;
+}
+
+.skin-card p {
+    padding: 0 20px;
+    font-size: 0.95em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Кнопка скачивания */
+.download-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 25px;
+    background-color: #6c5ce7; /* Фиолетовый акцент */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #5b4bc4;
+    transform: scale(1.05); /* Увеличение кнопки */
+}
+
+/* Футер */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
